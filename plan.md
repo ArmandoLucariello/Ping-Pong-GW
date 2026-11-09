@@ -14,7 +14,7 @@ Status: **draft**, aligned with [tech-stack.md](tech-stack.md); only the public 
 - [x] Confirm the remote administration tool: Tailscale
 
 ## Phase 1 - Foundations
-- [ ] Monorepo with client, server and shared packages
+- [x] Monorepo with client, server and shared packages
 - [ ] Install Tailscale on site, configure SSH with keys and test access after a reboot from outside the home network, before any other change
 - [ ] Raspberry Pi setup: Docker, storage for the database, hardware watchdog
 - [ ] ARM64 image build and registry, deployment by remote pull

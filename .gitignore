@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.expo/
+web-build/
+coverage/
+*.log
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+.DS_Store
+expo-env.d.ts
+.metro-health-check*
+*.jks
+*.keystore

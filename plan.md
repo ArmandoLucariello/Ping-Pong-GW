@@ -23,7 +23,7 @@ Status: **draft**, aligned with [tech-stack.md](tech-stack.md); only the public 
 - [ ] Raspberry Pi hardening: SSH keys, firewall, automatic updates, no ports published
 - [ ] First deployment of an empty app to the Raspberry Pi, reachable over Tailscale
 - [ ] Android test build on a real device; web app checked on an iPhone
-- [ ] Database schema and migrations
+- [x] Database schema and migrations (tournament tables come with Phase 5)
 - [x] English/Italian translation setup
 
 ## Phase 2 - Users and rules

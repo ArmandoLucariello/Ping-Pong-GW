@@ -24,7 +24,7 @@ Status: **draft**, aligned with [tech-stack.md](tech-stack.md); only the public 
 - [ ] First deployment of an empty app to the Raspberry Pi, reachable over Tailscale
 - [ ] Android test build on a real device; web app checked on an iPhone
 - [ ] Database schema and migrations
-- [ ] English/Italian translation setup
+- [x] English/Italian translation setup
 
 ## Phase 2 - Users and rules
 - [ ] Authentication: local accounts, backend sessions, invite links

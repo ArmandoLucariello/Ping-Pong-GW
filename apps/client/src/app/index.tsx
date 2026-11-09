@@ -1,12 +1,15 @@
 import { Stack } from 'expo-router';
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { StyleSheet, Text, View } from 'react-native';
 
+import { LanguageSwitcher } from '@/components/language-switcher';
 import { fetchHealth } from '@/lib/api';
 
 type ServerStatus = 'checking' | 'online' | 'offline';
 
 export default function HomeScreen() {
+  const { t } = useTranslation();
   const [status, setStatus] = useState<ServerStatus>('checking');
 
   useEffect(() => {
@@ -19,7 +22,8 @@ export default function HomeScreen() {
     <View style={styles.container}>
       <Stack.Screen options={{ title: 'Ping Pong GW' }} />
       <Text style={styles.title}>Ping Pong GW</Text>
-      <Text>Server: {status}</Text>
+      <Text>{t(`home.server.${status}`)}</Text>
+      <LanguageSwitcher />
     </View>
   );
 }

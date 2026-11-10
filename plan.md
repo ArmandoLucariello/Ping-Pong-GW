@@ -14,7 +14,7 @@ Status: **draft**, aligned with [tech-stack.md](tech-stack.md); only the public 
 - [x] Confirm the remote administration tool: Tailscale
 
 ## Phase 1 - Foundations
-- [ ] Monorepo with client, server and shared packages
+- [x] Monorepo with client, server and shared packages
 - [ ] Install Tailscale on site, configure SSH with keys and test access after a reboot from outside the home network, before any other change
 - [ ] Raspberry Pi setup: Docker, storage for the database, hardware watchdog
 - [ ] ARM64 image build and registry, deployment by remote pull
@@ -23,8 +23,8 @@ Status: **draft**, aligned with [tech-stack.md](tech-stack.md); only the public 
 - [ ] Raspberry Pi hardening: SSH keys, firewall, automatic updates, no ports published
 - [ ] First deployment of an empty app to the Raspberry Pi, reachable over Tailscale
 - [ ] Android test build on a real device; web app checked on an iPhone
-- [ ] Database schema and migrations
-- [ ] English/Italian translation setup
+- [x] Database schema and migrations (tournament tables come with Phase 5)
+- [x] English/Italian translation setup
 
 ## Phase 2 - Users and rules
 - [ ] Authentication: local accounts, backend sessions, invite links

@@ -49,7 +49,9 @@ among colleagues. iPhone users use the web application.
 ### Ranking
 - **Elo** rating, with separate rankings for singles and doubles.
 - In doubles, ratings are kept per player, since teams only exist for a single match.
-- Rankings are organized in **3-month seasons**, with archived past seasons. Elo ratings **reset at the start of each season**.
+- Rankings are organized in **3-month seasons** following calendar quarters and created automatically, with archived past seasons.
+  Elo ratings **reset at the start of each season**.
+- Both casual and tournament matches count toward Elo, once the match is completed.
 
 ### Tournaments
 - Supported formats: knockout, round-robin, groups + knockout.
@@ -88,7 +90,7 @@ among colleagues. iPhone users use the web application.
 ## 5. Non-functional requirements
 - **Real-time**: live scores pushed via WebSocket or SSE.
 - **Devices**: mobile first, also desktop and tablet (kiosk).
-- **Privacy / GDPR**: store only the employee data needed; define retention; users can delete their account.
+- **Privacy / GDPR**: store only the employee data needed; define retention; users can delete their account, which anonymizes it while keeping match results.
 - **Security**: the service is exposed on the internet, so authentication, closed or invite-only registration, rate limiting
   and server hardening are required. No real data goes online before authentication is in place.
 - **Availability**: automatic restart after power loss; the database must survive unclean shutdowns. The Raspberry Pi is
